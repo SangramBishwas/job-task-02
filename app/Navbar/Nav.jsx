@@ -1,13 +1,14 @@
 'use client'
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import Button from '../Shared/Button';
 const Nav = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => {
         setNav(!nav)
     }
     return (
-        <div>
+        <div className='mt-5'>
             <div className='flex lg:gap-[124px] justify-between items-center relative'>
                 <div className='flex gap-5 items-center'>
                     <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +33,7 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className={nav ? 'absolute  top-0 w-full lg:hidden text-white' : 'absolute -left-[500px] top-0 w-full lg:hidden text-white'}>
-                    <div className='relative'>
+                    <div className='relative z-50'>
                         <div className='absolute bg-black w-1/2'>
                             <div className='flex gap-5 items-center absolute'>
                                 <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +50,7 @@ const Nav = () => {
                                 <li>Projects</li>
                                 <li>Testimonials</li>
                                 <li>Contact</li>
-                                <button className='bg-[#FD6F00] rounded-md text-white py-3 px-4'>Download</button>
+                                <Button text={'Download'}></Button>
                             </ul>
                         </div>
                     </div>
