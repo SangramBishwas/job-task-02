@@ -3,6 +3,7 @@ import "./globals.css";
 import Nav from "./Navbar/Nav";
 import About from "./About/About";
 import Banner from "./Banner/Banner";
+import Services from "./Services/Services";
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] })
 
@@ -15,10 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div className="mx-6 md:mx-12 lg:mx-24">
+        <div className="px-[3%] lg:px-[10%] lg:w-auto">
           <Nav />
           <Banner />
           <About />
+          <Services />
         </div>
 
         {children}
