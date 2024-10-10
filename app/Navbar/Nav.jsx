@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import Button from '../Shared/Button';
+import Link from 'next/link';
 const Nav = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => {
@@ -47,7 +48,7 @@ const Nav = () => {
                                 </span>
                             </div>
                             <ul className='py-20 flex flex-col gap-6 px-0 items-center justify-between w-full text-lg lg:hidden'>
-                                <li>Home</li>
+                                <li><Link href='/'>Home</Link></li>
                                 <li>About Me</li>
                                 <li>Services</li>
                                 <li>Projects</li>

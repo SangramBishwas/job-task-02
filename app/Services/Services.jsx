@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Heading from '../Shared/Heading';
 
@@ -97,7 +98,6 @@ const Services = () => {
                         </p>
                     </div>
                 </div>
-
             </div>
 
         </div>
