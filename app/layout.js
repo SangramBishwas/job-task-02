@@ -5,6 +5,7 @@ import About from "./About/About";
 import Banner from "./Banner/Banner";
 import Services from "./Services/Services";
 import Projects from "./Projects/Projects";
+import Footer from "./Footer/Footer";
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600', '700'] })
 
@@ -20,8 +21,8 @@ export default function RootLayout({ children }) {
         <div className="px-[3%] lg:px-[10%] lg:w-auto">
           <Nav />
         </div>
-
         {children}
+        <Footer />
       </body>
     </html>
   );

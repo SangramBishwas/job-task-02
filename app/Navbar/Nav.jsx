@@ -23,7 +23,7 @@ const Nav = () => {
                     </span>
                 </div>
                 <ul className='lg:w-3/4 lg:flex items-center justify-between gap-[1%] w-full text-lg hidden'>
-                    <li>Home</li>
+                    <li><Link href='/'>Home</Link></li>
                     <li>About</li>
                     <li>Services</li>
                     <li>Projects</li>
